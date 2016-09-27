@@ -35,11 +35,6 @@ namespace Fiap.DesenvolvimentoWeb.WebApi.Models
 
         public bool Atualizar(Produtos item)
         {
-            //Produtos prod = Buscar(item.Id);
-            //prod.Descricao = item.Descricao;
-            //prod.DataCriacao = item.DataCriacao;
-            //prod.Preco = item.Preco;
-
             try
             {
                 ctx.Entry<Produtos>(item).State = EntityState.Modified;
